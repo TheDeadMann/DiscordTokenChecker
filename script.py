@@ -14,7 +14,4 @@ for token in tokens:
     code = r.get(url, headers=header).status_code
 
     if (code == 200):
-        print(f"{token} - Valid")
-
-    else:
-        print(f"{token} - Invalid")
+        print(f"- {token}\n")
